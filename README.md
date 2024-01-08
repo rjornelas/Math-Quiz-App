@@ -1,2 +1,2 @@
-# QR-Code-Scanner-Java
-A simple  QR Code Scanner app with Java
+# Math-Quiz-app-Kotlin
+A simple Math Quiz app with Java

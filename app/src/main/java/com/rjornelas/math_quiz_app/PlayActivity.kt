@@ -78,7 +78,7 @@ class PlayActivity : AppCompatActivity() {
             }
 
             override fun onFinish() {
-                TODO("Not yet implemented")
+                setNextRound()
             }
         }.start()
     }

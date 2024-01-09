@@ -51,8 +51,6 @@
             android:layout_height="match_parent"
             android:background="@drawable/black_color_pb_bg"
             android:indeterminate="false"
-            android:max="10"
-            android:progress="10"
             android:progressDrawable="@drawable/brain_color_pb_bg"
             android:rotation="-90" />
 

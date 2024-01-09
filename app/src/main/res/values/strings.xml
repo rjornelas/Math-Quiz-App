@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Math-quiz-app</string>
+    <string name="title_name">Quiz Math</string>
+    <string name="btn_easy_text">EASY</string>
+    <string name="btn_medium_text">MEDIUM</string>
+    <string name="btn_hard_text">HARD</string>
+    <string name="logo_image">logo image</string>
 </resources>

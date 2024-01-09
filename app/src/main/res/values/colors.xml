@@ -5,4 +5,5 @@
     <color name="primary_color">#EE3F5D</color>
     <color name="primary_color_dark">#EF3E60</color>
     <color name="background_color">#FEFEFE</color>
+    <color name="almost_black">#202020</color>
 </resources>

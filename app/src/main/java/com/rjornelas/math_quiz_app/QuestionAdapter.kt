@@ -44,9 +44,9 @@ class QuestionAdapter(
         holder.correctAnswer.text = "Correct answer: ${dataset[position].answer}"
 
         if(position%2 != 0){
-            holder.itemView.setBackgroundColor(Color.parseColor("#F34F6B"))
-        }else{
             holder.itemView.setBackgroundColor(Color.parseColor("#F67087"))
+        }else{
+            holder.itemView.setBackgroundColor(Color.parseColor("#f8889b"))
         }
 
     }

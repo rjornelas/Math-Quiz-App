@@ -8,8 +8,8 @@ object Easy {
     private var answer: Int = 0
 
     fun getQuestions():Pair<String, Int>{
-        val number1 = Random.nextInt(-100,100)
-        val number2 = Random.nextInt(-100,100)
+        val number1 = Random.nextInt(1,100)
+        val number2 = Random.nextInt(1,100)
         val operator = arrayOf("+", "-", "*", "/").random()
 
         val problem = "$number1 $operator $number2"

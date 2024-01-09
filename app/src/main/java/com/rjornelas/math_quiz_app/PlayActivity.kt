@@ -1,5 +1,6 @@
 package com.rjornelas.math_quiz_app
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
@@ -105,6 +106,10 @@ class PlayActivity : AppCompatActivity() {
     }
 
     private fun endGame() {
+        val intent = Intent(this, FinishActivity::class.java)
+        intent.putExtra("score", score)
+        intent.putExtra("dataSet", questionDataList)
+        startActivity(intent)
         finish()
         timer?.cancel()
         timer = null

@@ -5,4 +5,6 @@
     <string name="btn_medium_text">MEDIUM</string>
     <string name="btn_hard_text">HARD</string>
     <string name="logo_image">logo image</string>
+    <string name="btn_play_again_text">Play again!</string>
+    <string name="results_title_text">Congratulations!</string>
 </resources>

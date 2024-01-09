@@ -3,7 +3,7 @@ package com.rjornelas.math_quiz_app
 import kotlin.random.Random
 
 data class QuestionList(
-    private val questionType: String
+    private val questionType: String?
 ){
     private var questionList: ArrayList<Pair<String, Int>> = ArrayList(10)
     private var questionDataList = ArrayList<Question>(10)

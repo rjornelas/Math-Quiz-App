@@ -8,7 +8,7 @@
     tools:context=".PlayActivity">
 
     <ProgressBar
-        android:id="@+id/progressBar"
+        android:id="@+id/horizontalPg"
         style="@style/Widget.AppCompat.ProgressBar.Horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -28,17 +28,17 @@
         android:layout_marginTop="60dp"
         android:gravity="center"
         android:textColor="@color/primary_color"
-        android:textSize="50sp"
+        android:textSize="35sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressBar"
-        tools:text="3x10" />
+        app:layout_constraintTop_toBottomOf="@+id/horizontalPg"
+        tools:text="(3x10)+((10x300)-400)" />
 
     <FrameLayout
         android:id="@+id/frameLayout"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,8 +47,8 @@
         <ProgressBar
             android:id="@+id/circularPg"
             style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:background="@drawable/black_color_pb_bg"
             android:indeterminate="false"
             android:max="10"
@@ -62,13 +62,24 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:textColor="@color/primary_color_dark"
-            android:textSize="80sp"
+            android:textSize="100sp"
             android:textStyle="bold"
             tools:text="10" />
     </FrameLayout>
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/btnOption1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Button"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnOption2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnOption2"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -79,18 +90,21 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/btnOption3"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
         android:text="Button"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/button9"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/btnOption4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnOption2" />
+
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/btnOption4"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -100,19 +114,5 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button9" />
-
-    <Button
-        android:id="@+id/button12"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="32dp"
-        android:text="Button"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/button11"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button10" />
-
+        app:layout_constraintStart_toEndOf="@+id/btnOption2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
